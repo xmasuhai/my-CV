@@ -2,6 +2,9 @@
   "name": "myCV",
   "version": "1.0.0",
   "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.26.9"
+  },
   "scripts": {
     "build": "rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
   },
