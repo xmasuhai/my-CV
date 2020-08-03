@@ -284,4 +284,4 @@ option = {
 
 myChart.setOption(option);
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=/main.f339a93e.js.map
+//# sourceMappingURL=main.f339a93e.js.map
