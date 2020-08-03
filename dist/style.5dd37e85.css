@@ -15,10 +15,6 @@ h5 {
     page-break-after: always;
     margin-bottom: 10px;
   }
-
-  header {
-    width: 90vw;
-  }
 }
 * {
   box-sizing: border-box;
@@ -143,8 +139,4 @@ small {
   color: #666;
 }
 
-header {
-  width: 70vw;
-}
-
-/*# sourceMappingURL=style.28799c15.css.map */
+/*# sourceMappingURL=style.5dd37e85.css.map */
