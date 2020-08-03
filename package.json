@@ -1,0 +1,17 @@
+{
+  "name": "myCV",
+  "version": "1.0.0",
+  "description": "网页预览：http://fangyinghang.com/cv-2020/dist/index.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
