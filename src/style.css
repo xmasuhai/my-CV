@@ -1,0 +1,70 @@
+@media print {
+  body,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+body {
+  background: #eee;
+  margin: 20px 0;
+}
+
+body article {
+  min-height: 29.7cm;
+  background: white;
+  margin: 0 auto;
+  overflow: auto;
+  width: 21cm;
+  padding: 1em;
+}
+
+body article section.bio {
+  position: relative;
+}
+
+body article section.bio img {
+  position: absolute;
+  width: 3.57cm;
+  height: 5cm;
+  right: 20px;
+  top: 0;
+}
+
+body article section.projects ol {
+  list-style-position: inside;
+  padding: 0;
+}
+
+body article section.projects ol li header {
+  display: inline-flex;
+}
+
+body article section.projects ol li header h3 {
+  display: inline-block;
+}
+
+p {
+  margin: 0.3em 0;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.page-break {
+  page-break-before: always;
+}

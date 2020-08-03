@@ -1,31 +1,30 @@
 // 基于准备好的dom，初始化echarts实例
-const myChart = echarts.init(document.getElementById("skills"));
-
+const myChart = echarts.init(document.getElementById("tech"));
 // 指定图表的配置项和数据
 const plantCap = [
   {
     name: "静态页面",
-    value: "8篇Blog 2个项目",
+    value: "8篇 1个项目",
   },
   {
     name: "编程基础",
-    value: "10篇Blog 3个项目",
+    value: "10篇",
   },
   {
     name: "Vue",
-    value: "5篇Blog 3个项目",
+    value: "8篇 3个项目",
   },
   {
     name: "React",
-    value: "6篇Blog 2个项目",
+    value: "6篇 2个项目",
   },
   {
     name: "项目开发",
-    value: "10篇Blog 3个项目",
+    value: "7篇",
   },
   {
-    name: "沟通能力",
-    value: "3篇Blog",
+    name: "沟通协作",
+    value: "3篇",
   },
 ];
 
