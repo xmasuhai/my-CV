@@ -1,32 +1,34 @@
 // 基于准备好的dom，初始化echarts实例
-const myChart = echarts.init(document.getElementById("tech"));
+import * as echarts from 'echarts'
+
+const myChart = echarts.init(document.getElementById('tech'))
 // 指定图表的配置项和数据
 const plantCap = [
   {
-    name: "静态页面",
-    value: "8篇 1个项目",
+    name: '静态页面',
+    value: '8篇 1个项目'
   },
   {
-    name: "编程基础",
-    value: "10篇",
+    name: '编程基础',
+    value: '10篇'
   },
   {
-    name: "Vue",
-    value: "8篇 3个项目",
+    name: 'Vue',
+    value: '8篇 3个项目'
   },
   {
-    name: "React",
-    value: "6篇 2个项目",
+    name: 'React',
+    value: '6篇 2个项目'
   },
   {
-    name: "项目开发",
-    value: "7篇",
+    name: '项目开发',
+    value: '7篇'
   },
   {
-    name: "沟通协作",
-    value: "3篇",
-  },
-];
+    name: '沟通协作',
+    value: '3篇'
+  }
+]
 
 const datalist = [
   {
@@ -36,13 +38,13 @@ const datalist = [
     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
       {
         offset: 0,
-        color: "#e54948",
+        color: '#e54948'
       },
       {
         offset: 1,
-        color: "#f08456",
-      },
-    ]),
+        color: '#f08456'
+      }
+    ])
   },
   {
     offset: [25, 30],
@@ -51,13 +53,13 @@ const datalist = [
     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
       {
         offset: 0,
-        color: "#77EEDF",
+        color: '#77EEDF'
       },
       {
         offset: 1,
-        color: "#49ddb2",
-      },
-    ]),
+        color: '#49ddb2'
+      }
+    ])
   },
   {
     offset: [90, 78],
@@ -66,13 +68,13 @@ const datalist = [
     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
       {
         offset: 0,
-        color: "#34475B",
+        color: '#34475B'
       },
       {
         offset: 0.35,
-        color: "#3FB37F",
-      },
-    ]),
+        color: '#3FB37F'
+      }
+    ])
   },
   {
     offset: [85, 35],
@@ -81,13 +83,13 @@ const datalist = [
     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
       {
         offset: 0,
-        color: "#277aec",
+        color: '#277aec'
       },
       {
         offset: 1,
-        color: "#57c5ec",
-      },
-    ]),
+        color: '#57c5ec'
+      }
+    ])
   },
   {
     offset: [55, 70],
@@ -96,13 +98,13 @@ const datalist = [
     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
       {
         offset: 0,
-        color: "#384D9D",
+        color: '#384D9D'
       },
       {
         offset: 1,
-        color: "#3C485E",
-      },
-    ]),
+        color: '#3C485E'
+      }
+    ])
   },
   {
     offset: [56, 45],
@@ -111,21 +113,21 @@ const datalist = [
     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
       {
         offset: 0,
-        color: "#FFCC33",
+        color: '#FFCC33'
       },
       {
         offset: 1,
-        color: "#e5d273",
-      },
-    ]),
-  },
-];
-let datas = [];
+        color: '#e5d273'
+      }
+    ])
+  }
+]
+let datas = []
 for (let i = 0; i < plantCap.length; i++) {
-  let item = plantCap[i];
-  let itemToStyle = datalist[i];
+  let item = plantCap[i]
+  let itemToStyle = datalist[i]
   datas.push({
-    name: item.name + "\n" + item.value,
+    name: item.name + '\n' + item.value,
     value: itemToStyle.offset,
     symbolSize: itemToStyle.symbolSize,
     label: {
@@ -133,35 +135,35 @@ for (let i = 0; i < plantCap.length; i++) {
         textStyle: {
           fontSize: 18,
           fontWeight: 800,
-          lineHeight: 22,
-        },
-      },
+          lineHeight: 22
+        }
+      }
     },
     itemStyle: {
       normal: {
         color: itemToStyle.color,
-        opacity: itemToStyle.opacity,
-      },
-    },
-  });
+        opacity: itemToStyle.opacity
+      }
+    }
+  })
 }
-option = {
-  backgroundColor: "#12468500",
+const option = {
+  backgroundColor: '#12468500',
   grid: {
     show: false,
     top: 10,
-    bottom: 10,
+    bottom: 10
   },
   xAxis: [
     {
       gridIndex: 0,
-      type: "value",
+      type: 'value',
       show: false,
       min: 0,
       max: 100,
-      nameLocation: "middle",
-      nameGap: 5,
-    },
+      nameLocation: 'middle',
+      nameGap: 5
+    }
   ],
   yAxis: [
     {
@@ -169,13 +171,13 @@ option = {
       min: 0,
       show: false,
       max: 100,
-      nameLocation: "middle",
-      nameGap: 30,
-    },
+      nameLocation: 'middle',
+      nameGap: 30
+    }
   ],
   series: [
     {
-      type: "effectScatter",
+      type: 'effectScatter',
       // symbol: 'circle',
       // symbolSize: 120,
 
@@ -183,22 +185,22 @@ option = {
       label: {
         normal: {
           show: true,
-          formatter: "{b}",
-          color: "#fff",
+          formatter: '{b}',
+          color: '#fff',
           textStyle: {
-            fontSize: "20",
-          },
-        },
+            fontSize: '20'
+          }
+        }
       },
       itemStyle: {
         normal: {
-          color: "#00acea",
-        },
+          color: '#00acea'
+        }
       },
-      data: datas,
-    },
-  ],
-};
+      data: datas
+    }
+  ]
+}
 
 // 使用刚指定的配置项和数据显示图表。
-myChart.setOption(option);
+myChart.setOption(option)
