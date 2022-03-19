@@ -1,174 +1,175 @@
 @media print {
-    body,
-    h3,
-    h4,
-    h5 {
-        margin: 0;
-    }
+  body,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+  }
 
-    .page-break {
-        page-break-before: always;
-        margin-top: 60px;
-    }
+  .page-break {
+    page-break-before: always;
+    margin-top: 60px;
+  }
 
-    .page-after {
-        page-break-after: always;
-        margin-bottom: 10px;
-    }
+  .page-after {
+    page-break-after: always;
+    margin-bottom: 10px;
+  }
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ol,
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 h3,
 h4,
 h5 {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    background: #eee;
-    margin: 20px 0;
+  background: #eee;
+  margin: 20px 0;
 
-    article {
-        min-height: 29.7cm;
-        background: white;
-        margin: 0 auto;
-        overflow: auto;
-        width: 21cm;
-        padding: 1em;
+  article {
+    background: white;
+    margin: 0 auto;
+    min-height: 29.7cm;
+    overflow: auto;
+    padding: 1em;
+    // A4
+    width: 21cm;
 
-        section.bio {
-            position: relative;
+    section.bio {
+      position: relative;
 
-            img {
-                position: absolute;
-                width: 3.57cm;
-                height: 5cm;
-                right: 20px;
-                top: 0;
-            }
-        }
+      img {
+        position: absolute;
+        width: 3.57cm;
+        height: 5cm;
+        right: 20px;
+        top: 0;
+      }
+    }
 
-        section.projects {
-            ol {
-                list-style-position: inside;
-                padding: 0;
+    section.projects {
+      ol {
+        list-style-position: inside;
+        padding: 0;
 
-                li {
-                    margin-bottom: 24px;
+        li {
+          margin-bottom: 24px;
 
-                    header {
-                        display: flex;
-                        justify-content: space-between;
-
-                        h3 {
-                            display: inline-block;
-                        }
-                    }
-                }
-            }
-
-            p {
-                color: #666;
-            }
-
-            strong {
-                color: #f60;
-            }
-        }
-
-        section.skills > aside {
+          header {
             display: flex;
             justify-content: space-between;
 
-            & > :first-child {
-                margin-right: 20px;
+            h3 {
+              display: inline-block;
             }
-
-            ul {
-                color: #666;
-
-                li {
-                    line-height: 1.5;
-                    margin-bottom: 2px;
-                }
-            }
-
-            strong {
-                color: #f60;
-            }
+          }
         }
+      }
 
-        section.openSource {
-            h2 {
-                position: relative;
-            }
+      p {
+        color: #666;
+      }
 
-            ul {
-                li {
-                    color: #666;
-                    margin-bottom: 24px;
-                }
-
-                strong {
-                    color: #f60;
-                }
-            }
-
-            header {
-                display: flex;
-                justify-content: space-between;
-            }
-        }
-
-        section.others {
-            strong {
-                color: #f60;
-            }
-        }
-
-        section.jobs {
-            header {
-                display: flex;
-                color: #666;
-                margin-bottom: 12px;
-
-                h3 {
-                    font-size: 18px;
-                }
-
-                h4 {
-                    margin-left: 1em;
-                    font-size: 18px;
-                }
-
-                span {
-                    font-size: 18px;
-                    margin-left: auto;
-                }
-            }
-        }
+      strong {
+        color: #f60;
+      }
     }
+
+    section.skills > aside {
+      display: flex;
+      justify-content: space-between;
+
+      & > :first-child {
+        margin-right: 20px;
+      }
+
+      ul {
+        color: #666;
+
+        li {
+          line-height: 1.5;
+          margin-bottom: 2px;
+        }
+      }
+
+      strong {
+        color: #f60;
+      }
+    }
+
+    section.openSource {
+      h2 {
+        position: relative;
+      }
+
+      ul {
+        li {
+          color: #666;
+          margin-bottom: 24px;
+        }
+
+        strong {
+          color: #f60;
+        }
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    section.others {
+      strong {
+        color: #f60;
+      }
+    }
+
+    section.jobs {
+      header {
+        display: flex;
+        color: #666;
+        margin-bottom: 12px;
+
+        h3 {
+          font-size: 18px;
+        }
+
+        h4 {
+          margin-left: 1em;
+          font-size: 18px;
+        }
+
+        span {
+          font-size: 18px;
+          margin-left: auto;
+        }
+      }
+    }
+  }
 }
 
 p {
-    margin: 0.3em 0;
+  margin: 0.3em 0;
 }
 
 h1 {
-    font-size: 30px;
-    margin-top: 0;
+  font-size: 30px;
+  margin-top: 0;
 }
 
 small {
-    color: #666;
+  color: #666;
 }
