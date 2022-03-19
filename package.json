@@ -2,7 +2,6 @@
   "name": "myCV",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@gitee.com:xmasuhai/my-CV.git",
   "author": "xmasuhai <xmasuhai@163.com>",
   "license": "MIT",
   "scripts": {
