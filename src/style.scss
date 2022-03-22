@@ -24,8 +24,8 @@
 ol,
 ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 h3,
@@ -51,11 +51,11 @@ body {
       position: relative;
 
       img {
-        position: absolute;
-        width: 3.57cm;
         height: 5cm;
+        position: absolute;
         right: 20px;
         top: 0;
+        width: 3.57cm;
       }
     }
 
@@ -162,7 +162,7 @@ body {
 }
 
 p {
-  margin: 0.3em 0;
+  margin: .3em 0;
 }
 
 h1 {
