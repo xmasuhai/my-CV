@@ -16,14 +16,16 @@
   <section class="bio">
     <h1>徐帅</h1>
     <img src="./images/cv.jpg" alt="1吋头像照片"/>
-    <p>男 | 33岁 | 前端开发工程师 | 上海</p>
-    <p>
-      手机：<a href="tel:13817431396">13817431396</a> |
-      微信：xmastan |
-      邮箱：<a href="mailto:xmasuhai@163.com">xmasuhai@163.com</a>
-    </p>
-    <p>2008-2012 上海应用技术大学 机械学院 本科</p>
-    <p>个人博客网站：<a href="https://xmasuhai.xyz">https://xmasuhai.xyz</a></p>
+    <div class="info">
+      <p>男 | 33岁 | 前端开发工程师 | 上海</p>
+      <p>
+        手机：<a href="tel:13817431396">13817431396</a> |
+        微信：xmastan |
+        邮箱：<a href="mailto:xmasuhai@163.com">xmasuhai@163.com</a>
+      </p>
+      <p>2008-2012 上海应用技术大学 机械学院 本科</p>
+      <p>个人博客网站：<a href="https://xmasuhai.xyz">https://xmasuhai.xyz</a></p>
+    </div>
   </section>
 
   <section class="projects">
@@ -37,22 +39,32 @@
           <span>
               <a href="https://github.com/xmasuhai/vite-share-blog">源码链接</a>
               <a href="https://xmasuhai.gitee.io/vite-share-blog-website">项目预览</a>
-              <a href="https://xmasuhai.gitee.io/vite-share-blog-website">相关博客文章 9篇</a>
+              <a href="https://xmasuhai.gitee.io/vite-share-blog-website">相关博客文章 9+篇</a>
             </span>
         </header>
         <p>
-          一个基于 <strong>Vue 3</strong> /
-          <strong>TypeScript</strong> 的单页面应用。
+          一个基于 <strong>Vue 3</strong> / <strong>TypeScript</strong> 和 <strong>Vite 2</strong> 构建的单页面应用。
+        </p>
+        <p>
+          这是我从自己记录学习笔记的需求出发，设计出的极简博客应用，
+          特点是使用 <em>markdown</em> 语法快速记录技术博客，并且实现不同用户博客共享
+        </p>
+        <p>
+          主要功能包括前端页面的登录、注册、首页博客列表展示、博客详情展示、博客创建、编辑和删除（markdown格式）、我的页面和其他用户博客列表展示等。
+          实现的步骤已总结为 <a>博客</a>
+        </p>
+        <p>
+          使用了开源的API接口，并用 <em>axios</em> 封装请求，实现对应的拦截器和 <strong>JWT</strong> 身份认证功能
+          并且使用了 ApiPost 接口测试工具，导出详细的接口文档 链接，让我对鉴权和接口封装有了一定的认识和实践
+        </p>
+        <p>
+          该项目大量使用基于 <strong>composition api</strong> 实现的 <strong>Vue3 Hooks</strong> ，让我对 Hooks 有了深刻的理解和应用。
+          项目中的 <a>hooks</a>，代替之前项目中使用的 mixin 写法 <a>解决mixin缺点</a>
+        </p>
+        <p>
+          使用了 <strong>pinia</strong> 作为统一的状态管理，对组件通信有了新的理解，<a>优缺点</a>
         </p>
 
-        <p>
-          这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
-          可以通过图表查看用户消费习惯。
-        </p>
-        <p>
-          该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks
-          有了深刻的理解和应用。
-        </p>
       </li>
 
       <!--我的UI库 Vueel3-->
@@ -62,24 +74,35 @@
           <span>
               <a href="https://github.com/xmasuhai/vueel3-demo-1">源码链接</a>
               <a href="https://xmasuhai.gitee.io/vueel3-demo-website/#/">项目预览</a>
+              <a href="https://xmasuhai.gitee.io/vite-share-blog-website">相关博客文章 9+篇</a>
             </span>
         </header>
         <p>
-          一款基于 <strong>Vue3.0/React16</strong> /
-          <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI
+          一款基于 <strong>Vue3.0</strong> / <strong>TypeScript</strong> / <strong>Vite 2</strong> 的 UI
           框架。
         </p>
         <p>
-          主要组件有日期选择器、弹出框，包括对话框、树形组件、日期选择器等常用组件<strong>下拉更新</strong>
+          主要组件有 Icon、Button、Switch、Dialog、Tabs、Collapse 等常用组件
         </p>
         <p>
-          并使用了<strong>Cypress</strong>进行单元测试，有效提高前端团队的开发效率。
+          此项目是我学习vue3的过程中实现的，让我对 vue3 和 vue2.6 的差异 有了清晰的认识和实践
         </p>
         <p>
-          制作过程让我对 TypeScript 和单元测试有了新的认识。
+          使用 Composition API 和 &lt;script setup&gt; 语法糖
+          在制作组件的过程中，使我了解了setup、ref、watchEffect等Composition API的用法
         </p>
         <p>
-          我将其总结成了两篇博客<strong>《TS 泛型的使用》、《Webpack库模式》</strong>
+          该项目尝试对比使用 模板写法 和 JSX 写法，让我对 JSX 写法 有了进一步的理解和应用。
+        </p>
+        <p>
+          制作过程让我对 TypeScript 和 Vite 有了新的认识。
+        </p>
+        <p>
+          项目使用 <strong>Vite 2</strong> 作为构建和打包工具，进行项目文档页面的构建，实现秒级开发更新启动，并记录了一些实践经验，
+          并使用 npm 进行组件库的打包，并发布到 npm/vueel-demo，已总结为 <a>博客</a>
+        </p>
+        <p>
+          我将其总结成了两篇博客 <strong>《TS 泛型的使用》、《Vite库模式》</strong>
         </p>
       </li>
 
@@ -90,11 +113,15 @@
           <span>
               <a href="https://github.com/xmasuhai/vueel-demo">源码链接</a>
               <a href="https://xmasuhai.gitee.io/vueel-demo-website">项目预览</a>
+              <a href="https://xmasuhai.gitee.io/vite-share-blog-website">相关博客文章 15+篇</a>
             </span>
         </header>
         <p>
           这是一个基于 <strong>React</strong> 和
           <strong>Vue</strong> 的多页面应用。
+        </p>
+        <p>
+          并使用了<strong>Mocha + Chai</strong>进行单元测试，有效提高前端开发效率。制作过程让我对单元测试有了新的认识。
         </p>
         <p>
           主要功能包括微信登录、手机验证、直播、点播、答题系统、课程管理系统等。
@@ -108,6 +135,7 @@
           <span>
               <a href="https://github.com/xmasuhai/money-1">源码链接</a>
               <a href="https://xmasuhai.gitee.io/meowney-0-website">项目预览</a>
+              <a href="https://xmasuhai.gitee.io/vite-share-blog-website">相关博客文章 8+篇</a>
             </span>
         </header>
         <p>
@@ -131,7 +159,7 @@
   <section class="skills">
     <h2>技能 <small>博客+项目数</small></h2>
     <aside>
-      <div id="tech" style="width: 700px; height: 300px;"></div>
+      <div id="tech" style="width: 350px; height: 300px;"></div>
       <div class="wrapper">
         <div id="skill"></div>
         <ul>

@@ -57,6 +57,12 @@ body {
         top: 0;
         width: 3.57cm;
       }
+
+      & > .info {
+        p {
+          line-height: 1.8;
+        }
+      }
     }
 
     section.projects {
@@ -68,6 +74,7 @@ body {
           margin-bottom: 24px;
 
           header {
+            align-items: center;
             display: flex;
             justify-content: space-between;
 
@@ -75,12 +82,15 @@ body {
               display: inline-block;
             }
           }
+
+          p {
+            color: #666;
+            margin: .5em 0;
+          }
         }
       }
 
-      p {
-        color: #666;
-      }
+
 
       strong {
         color: #f60;
@@ -159,10 +169,6 @@ body {
       }
     }
   }
-}
-
-p {
-  margin: .3em 0;
 }
 
 h1 {
