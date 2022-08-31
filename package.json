@@ -1,11 +1,10 @@
 {
   "name": "my-cv-2022",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "xmasuhai <xmasuhai@163.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && parcel build src/index.html --no-minify --public-url ./",
+    "build": "rm -rf dist && parcel build src/index.html --public-url ./",
     "pv": "parcel src/index.html"
   },
   "devDependencies": {
