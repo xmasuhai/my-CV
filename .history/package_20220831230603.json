@@ -9,7 +9,10 @@
     "pv": "parcel src/index.html"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.7.0"
+    "@parcel/transformer-sass": "^2.7.0",
+    "buffer": "^6.0.3",
+    "parcel": "2.7.0",
+    "sass": "1.54.7"
   },
   "dependencies": {
     "echarts": "^5.3.1"
