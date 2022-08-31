@@ -1,4 +1,4 @@
-## 网页预览：https://xmasuhai.xyz/cv-2020/dist/index.html
+## 网页预览：https://xmasuhai.xyz/my-CV/dist/index.html
 
 ## 开发模式
 
