@@ -2,4 +2,6 @@
 /.cache/
 /.parcel-cache/
 /.idea/
-/.history
+/.history/
+/.lh/
+/.vscode/
